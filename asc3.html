@@ -1,0 +1,39 @@
+    <html>
+      <head>
+        <script>
+           function Ascending()
+          {
+               var a=prompt("enter 1st value");
+               var b=prompt("enter 2nd value");
+               var c=prompt("enter 3rd value");
+              if(a<b && a<c)
+                {
+                 if(b<c)   
+                   alert(a+","+b+","+c);              
+                else
+                   alert(a+","+c+","+b);
+                }
+               else if(b<a && b<c)
+               {
+                  if(a<c)
+                   alert(b+","+a+","+c);           
+                  else
+                   alert(b+","+c+","+a);
+              }
+             else if(a<b)
+                   alert(c+","+a+","+b);
+             else
+                   alert(c+","+b+","+a);
+         }
+        </script>     
+        </head>  
+       <body>
+      <h1>GIET ENGINEERING COLLEGE </h1>
+       <input type=text size=4 id='txt1'>
+       <input type=text size=4 id='txt2'>
+       <input type=text size=4 id='txt3'>
+       <input type=text size=4 id='txt4'> 
+       <input type=button value=ascending 
+         onclick="Ascending()">
+       </body>
+   </html>

@@ -1,0 +1,26 @@
+<html>
+<head>
+<script>
+   function change1()
+    {
+      document.getElementById('one').style.zIndex="2";
+      document.getElementById('two').style.zIndex="1";
+   }
+  function change2()
+   {
+      document.getElementById('one').style.zIndex="1";
+      document.getElementById('two').style.zIndex="2";
+   }
+
+</script>
+</head>
+<body>
+<div id='one' style="z-index:2 ;top:50px;left:20px;position:absolute;width:70%;height:10%;text-align:center;text-valign:center;font-size:40;border:groove;background-color:red;color:white;">
+   GIET ENGINEERING COLLEGE  </DIV>
+
+<div id='two' style="z-index:1; top:60px;left:30px;position:absolute;width:70%;height:10%;text-align:center;text-valign:center;font-size:40;border:groove;background-color:green;color:yellow;">
+   GIET COLLEGE OF ENGINEERING  </DIV>
+<input type=button value=change1 onclick=change1()>
+<input type=button value=change2 onclick=change2()>
+</body>
+</html>
